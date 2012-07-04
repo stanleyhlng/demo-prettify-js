@@ -128,7 +128,7 @@
 		//-->
 	</head>
 	
-	<body data-spy="scroll">
+	<body>
 	
 		<?php include 'includes/site_navbar.php'; ?>
 	
