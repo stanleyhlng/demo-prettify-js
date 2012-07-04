@@ -2,7 +2,7 @@ a {
 	-moz-transition: color 0.3s ease 0s;	
 	-webkit-transition: color 0.3s ease 0s;	
 	-o-transition: color 0.3s ease 0s;	
-	-ms-transition: color 0.3s ease 0s;	
+	-ms-transition: color 0.3s ease 0s;
 }
 
 a:hover {
@@ -15,8 +15,9 @@ body {
 	background-repeat: repeat;	
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 	
 	min-height: 100%;
-	padding-top: 90px;
-    padding-bottom: 40px;
+	padding-top: 0 !important;
+	//padding-top: 90px;
+    //padding-bottom: 40px;
 }
 
 figure.code {
@@ -43,14 +44,49 @@ figure.code figcaption {
 }
 
 section {
-	padding-top: 40px;
+	padding-top: 50px;
+	opacity: 0.9;
+}
+
+pre.prettyprint {
+	margin-bottom: inherit;
 }
 
 body > div.container {
-	background-color: #EEEEEE;
+	background-color: rgba(255,255,255,0.5);
+	padding: 20px;
+	padding-top: 100px;
+	padding-bottom: 40px;
+}
+
+.code-language {
+	padding-top: 100px;
+}
+
+.code-wrapper {
+	//background-color: #ED145B;
+	background-color: #0088CC;
+	margin: 0 -40px;
+	padding: 10px 40px;
+}
+
+.footer {
+	padding-bottom: 500px;
+}
+
+.jumbotron p {
+	margin-bottom: 50px;	
+}
+
+.masthead small {
+	display: block;
 	padding: 20px;
 }
 
 .navbar .nav > li > a {
 	font-size: 20px;
+}
+
+.section-inner {
+	margin: 20px;
 }

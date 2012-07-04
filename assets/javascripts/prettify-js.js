@@ -7,7 +7,9 @@
 		prettyPrint();
 	
 		// initialize scroll-spy
-		$('#navbar').scrollspy();
+		$('#navbar').scrollspy({
+		offset: 100
+		});
 	};
 
 	// fix sub nav on scroll

@@ -110,7 +110,7 @@
 		<meta name="description" content="" />
 		<meta name="author" content="" />
 		
-		<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/libraries/bootstrap/css/bootstrap.min.css" />
 		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
 		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -121,9 +121,11 @@
 		<link rel="stylesheet" href="<?php echo $file; ?>" />
 		<link rel="stylesheet" href="assets/stylesheets/bootstrap-docs.css" />
 		<link rel="stylesheet" href="assets/stylesheets/prettify-js.css" />
-		<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap-responsive.css" />		
-    		
+		<link rel="stylesheet" href="assets/libraries/bootstrap/css/bootstrap-responsive.css" />		
+    	
+    	<!--	
 		<link rel="shortcut icon" href="../vendor/stanleyhlng/icons/favicon.ico" />
+		//-->
 	</head>
 	
 	<body data-spy="scroll">
@@ -142,9 +144,14 @@
 			</div>
 			//-->
 
-			<header id="overview" class="jumbotron subhead">
-				<h1><strong>"<?php echo ucfirst($id); ?>"</strong> Theme <small>for Prettify.JS</small></h1>
-				<p class="lead">Beautify the code snippets in a web page.  Here's the themes for <a target="_blank" href="http://code.google.com/p/google-code-prettify/">Prettify.JS</a>.</p>
+			<header id="overview" class="jumbotron masthead">
+				<h1>
+					<strong>"<?php echo ucfirst($id); ?>"</strong> Theme 
+					<small>for <a target="_blank" href="http://code.google.com/p/google-code-prettify/">Prettify.JS</a></small>
+					</h1>
+				<p class="lead">Beautify the code snippets in a web page.  <!--Here's the themes for <a target="_blank" href="http://code.google.com/p/google-code-prettify/">Prettify.JS</a>.
+					//-->
+				</p>
 				<div class="subnav">
 					<ul class="nav nav-pills">
 						<?php foreach ($languages as $language): ?>
@@ -155,30 +162,33 @@
 					</ul>
 				</div>
 			</header>
-
-			<?php foreach ($languages as $language): ?>
-			<section id="<?php echo $language['id']; ?>">
-<!--
+			
+			<section id="examples">
 				<div class="page-header">
-					<h2><?php echo $language['name']; ?></h2>
+					<h2>
+						Examples
+						<small>beautify your code in different languages</small>
+					</h2>
 				</div>
-//-->
-				<div class="row">
+				<?php foreach ($languages as $language): ?>
+				<div class="row code-language" id="<?php echo $language['id']; ?>">
 					<div class="span12">
+<div class="code-wrapper">
 <figure class="code">
 <figcaption>
-	<span><?php echo $language['name']; ?></span>
+<span><?php echo $language['name']; ?></span>
 </figcaption>
 <pre class="prettyprint linenums lang-<?php echo $language['id']; ?>"><?php
-	$data = file_get_contents( $language['file'] );
-	$data = htmlentities( $data );
-	echo $data;
+$data = file_get_contents( $language['file'] );
+$data = htmlentities( $data );
+echo $data;
 ?></pre>
 </figure>
+</div>	
 					</div>
 				</div>
+				<?php endforeach; ?>
 			</section>
-			<?php endforeach; ?>
   
 			<hr />
 			
@@ -186,8 +196,8 @@
 
 		</div>
 	
-		<script type="text/javascript" src="../lib/jquery/js/jquery.min.js"></script>
-		<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assets/libraries/jquery/js/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/libraries/bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="assets/libraries/prettify/js/lang-css.js"></script>				
 		<script type="text/javascript" src="assets/libraries/prettify/js/prettify.js"></script>		
 		<script type="text/javascript" src="assets/javascripts/prettify-js.js"></script>
