@@ -163,6 +163,43 @@
 				</div>
 			</header>
 			
+			<section id="usage">
+				<div class="page-header">
+					<h2>
+						Usage
+					</h2>
+					<p>Take the <code>&lt;pre&gt;</code> element and add two optional clases <code>prettyprint</code> <code>linenums</code> for enhanced rendering.</p>
+				</div>
+
+				<div class="row">
+					<div class="span12">
+						<h3>Markup</h3>
+						<p>You can wrap your code snippet using <code>&lt;pre&gt;</code> element in the HTML page.</p>
+<div class="code-wrapper">
+<pre class="prettyprint linenums">
+&lt;pre class="prettyprint linenums"&gt;
+&amp;lt;p&amp;gt;Sample text here...&amp;lt;/p&amp;gt;
+&lt;/pre&gt;
+</pre>
+</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span12">&nbsp;</div>
+				</div>
+				<div class="row">
+					<div class="span12">
+						<h3>Result</h3>
+						<p>Here's the result after prettify.</p>
+<div class="code-wrapper">
+<pre class="prettyprint linenums">
+&lt;p&gt;Sample text here...&lt;/p&gt;
+</pre>
+</div>
+					</div>
+				</div>
+			</section>
+			
 			<section id="examples">
 				<div class="page-header">
 					<h2>

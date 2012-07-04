@@ -8,7 +8,7 @@
 	
 		// initialize scroll-spy
 		$('#navbar').scrollspy({
-		offset: 100
+		offset: 10
 		});
 	};
 
