@@ -50,3 +50,7 @@ body > div.container {
 	background-color: #EEEEEE;
 	padding: 20px;
 }
+
+.navbar .nav > li > a {
+	font-size: 20px;
+}
