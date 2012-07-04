@@ -1,0 +1,52 @@
+a {
+	-moz-transition: color 0.3s ease 0s;	
+	-webkit-transition: color 0.3s ease 0s;	
+	-o-transition: color 0.3s ease 0s;	
+	-ms-transition: color 0.3s ease 0s;	
+}
+
+a:hover {
+	color: #0181EB;
+}
+
+body {
+	background-color: #DDDDDD;
+	background-image: url("../images/pattern-4.png");
+	background-repeat: repeat;	
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 	
+	min-height: 100%;
+	padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+figure.code {
+	background: none repeat scroll 0 0 transparent;
+	margin: auto 0;
+}
+
+figure.code figcaption {
+	background: url("../images/code_bg.png?1320899905") repeat-x scroll center top #AAAAAA;
+	border-color: #CBCBCB #A5A5A5 -moz-use-text-color;
+	border-style: solid solid none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-width: 1px 1px 0;
+	color: #474747;
+	font-family: "Helvetica Neue",Arial,"Lucida Grande","Lucida Sans Unicode",Lucida,sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 2em;
+	margin-bottom: -1px;
+	position: relative;
+	text-align: center;
+	text-shadow: 0 1px 0 #CBCCCC;
+}
+
+section {
+	padding-top: 80px;
+}
+
+body > div.container {
+	background-color: #EEEEEE;
+	padding: 20px;
+}
