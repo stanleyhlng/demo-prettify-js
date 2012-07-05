@@ -8,8 +8,9 @@
 	if ( empty ($id) ) 
 	{
 		// TODO: redirect to error page
-		die( 'missing input params: id' );
-		exit;
+		//die( 'missing input params: id' );
+		//exit;
+		$id = "bootstrap";
 	}
 	else 
 	{
