@@ -268,9 +268,9 @@
 $markup = <<<MARKUP
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="path/to/prettify.css" />
-</head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="path/to/prettify.css" />
+  </head>
 </html>
 
 MARKUP;
@@ -289,9 +289,9 @@ echo htmlentities( $markup );
 $markup = <<<MARKUP
 <!DOCTYPE html>
 <html>
-<body>
-<script type="text/javascript" src="path/to/prettify.js"></script>
-</body>
+  <body>
+    <script type="text/javascript" src="path/to/prettify.js"></script>
+  </body>
 </html>
 
 MARKUP;
@@ -320,12 +320,12 @@ echo htmlentities( $markup );
 $code = <<<CODE
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Demo | Prettify.JS | stanleyhlng.com</title>
-	</head>
-	<body>
-		<h1>Hello, World!</h1>
-	</body>
+  <head>
+    <title>Demo | Prettify.JS | stanleyhlng.com</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
 </html>
 CODE;
 $code = htmlentities( $code );
@@ -380,15 +380,15 @@ echo htmlentities( $markup );
 $markup = <<<MARKUP
 <script type="text/javascript">
 	
-	(function(jQuery){
+(function(jQuery){
 	
-		jQuery( document ).ready( function() {
+  jQuery( document ).ready( function() {
 		
-			prettyPrint();
+    prettyPrint();
 		
-		} );
-	
-	}(jQuery))
+  } );
+
+}(jQuery))
 	
 </script>
 
@@ -419,12 +419,12 @@ echo htmlentities( $markup );
 $markup = <<<MARKUP
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Demo | Prettify.JS | stanleyhlng.com</title>
-	</head>
-	<body>
-		<h1>Hello, World!</h1>
-	</body>
+  <head>
+    <title>Demo | Prettify.JS | stanleyhlng.com</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
 </html>
 
 MARKUP;
@@ -446,12 +446,12 @@ echo htmlentities( $markup );
 $markup = <<<MARKUP
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Demo | Prettify.JS | stanleyhlng.com</title>
-	</head>
-	<body>
-		<h1>Hello, World!</h1>
-	</body>
+  <head>
+    <title>Demo | Prettify.JS | stanleyhlng.com</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
 </html>
 
 MARKUP;
@@ -480,10 +480,10 @@ echo htmlentities( $markup );
 $markup = <<<MARKUP
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="path/to/prettify.css" />
-<link rel="stylesheet" type="text/css" href="path/to/prettify-[YOUR THEME].css" />
-</head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="path/to/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="path/to/prettify-[YOUR THEME].css" />
+  </head>
 </html>
 
 MARKUP;
@@ -526,12 +526,12 @@ echo htmlentities( $markup );
 $code = <<<CODE
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Demo | Prettify.JS | stanleyhlng.com</title>
-	</head>
-	<body>
-		<h1>Hello, World!</h1>
-	</body>
+  <head>
+    <title>Demo | Prettify.JS | stanleyhlng.com</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
 </html>
 CODE;
 $code = htmlentities( $code );
@@ -560,12 +560,12 @@ echo htmlentities( $markup );
 $markup = <<<MARKUP
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Demo | Prettify.JS | stanleyhlng.com</title>
-	</head>
-	<body>
-		<h1>Hello, World!</h1>
-	</body>
+  <head>
+    <title>Demo | Prettify.JS | stanleyhlng.com</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
 </html>
 
 MARKUP;
