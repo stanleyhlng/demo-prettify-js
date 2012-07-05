@@ -8,7 +8,7 @@
 	        	<span class="icon-bar"></span>
 	        </a>
 	        //-->	
-			<a class="brand" href="#">demo.stanleyhlng.com/prettify-js/</a>
+			<a class="brand" href="/prettify-js/">demo.stanleyhlng.com/prettify-js/</a>
 			<!--
 			<div class="nav-collapse">
 				<ul class="nav">
