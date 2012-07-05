@@ -186,7 +186,7 @@
 					//-->
 				</p>
 				<p>
-					<a onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download <?php echo $themes[$id]['name']; ?>']);" class="btn btn-primary btn-large" href="<?php echo $file; ?>">Download</a>
+					<a onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download <?php echo $themes[$id]['name']; ?>']);" class="btn btn-primary btn-large" href="<?php echo $file; ?>">Download<small>(<?php echo $id . DIRECTORY_SEPARATOR . basename(($file)); ?>)</small></a>
 				</p>
 				<div class="bs-links">
 					<ul class="quick-links">
