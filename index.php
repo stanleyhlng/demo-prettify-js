@@ -10,7 +10,8 @@
 		// TODO: redirect to error page
 		//die( 'missing input params: id' );
 		//exit;
-		$id = "bootstrap";
+		header( 'Location: /prettify-js/?id=bootstrap' );
+		exit;
 	}
 	else 
 	{
