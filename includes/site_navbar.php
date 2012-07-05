@@ -18,6 +18,10 @@
 		'name' => 'Solarized Dark',
 		'link' => '/prettify-js/?id=solarized-dark'
 	);
+	$themes['sons-of-obsidian'] = array(
+		'name' => 'Sons of Obsidian',
+		'link' => '/prettify-js/?id=sons-of-obsidian'
+	);
 ?>
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
