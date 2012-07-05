@@ -3,14 +3,22 @@
 	var main = function() {
 		
 		// initialize Prettify.JS module
-		console.log( 'main' );	
 		prettyPrint();
+		scrollTop();
 	
 		// initialize scroll-spy
 		//$('#navbar').scrollspy({
 		//offset: 10
 		//});
 	};
+
+	// scroll to top of the page
+	var scrollTop = function() {
+		$('a[href=#top]').click( function() {
+			$('html, body').animate( { scrollTop : 0 }, 'slow' );
+			return false;
+		} );
+	}
 
 	// fix sub nav on scroll
 	var $win = $(window);

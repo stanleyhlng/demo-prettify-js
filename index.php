@@ -128,12 +128,12 @@
 		//-->
 	</head>
 	
-	<body>
+	<body name="top">
 	
 		<?php include 'includes/site_navbar.php'; ?>
 	
 		<div class="container">
-		
+			
 			<!-- Hero unit -->
 			<!--
 			<div class="hero-unit">
@@ -244,8 +244,8 @@ echo $data;
 	
 		<script type="text/javascript" src="assets/libraries/jquery/js/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/libraries/bootstrap/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="assets/libraries/prettify/js/lang-css.js"></script>				
 		<script type="text/javascript" src="assets/libraries/prettify/js/prettify.js"></script>		
+		<script type="text/javascript" src="assets/libraries/prettify/js/lang-css.js"></script>				
 		<script type="text/javascript" src="assets/javascripts/prettify-js.js"></script>
 	</body>
 
