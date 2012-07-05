@@ -8,15 +8,15 @@
 	$themes = array();
 	$themes['bootstrap'] = array(
 		'name' => 'Bootstrap',
-		'link' => '/prettify-js/theme.php?id=bootstrap'
+		'link' => '/prettify-js/?id=bootstrap'
 		);
 	$themes['tomorrow-night-blue'] = array(
 		'name' => 'Tomorrow Night Blue',
-		'link' => '/prettify-js/theme.php?id=tomorrow-night-blue'
+		'link' => '/prettify-js/?id=tomorrow-night-blue'
 		);
 	$themes['solarized-dark'] = array(
 		'name' => 'Solarized Dark',
-		'link' => '/prettify-js/theme.php?id=solarized-dark'
+		'link' => '/prettify-js/?id=solarized-dark'
 	);
 ?>
 <div class="navbar navbar-fixed-top">
