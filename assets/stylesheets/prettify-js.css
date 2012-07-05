@@ -73,7 +73,6 @@ body > div.container {
 
 #steps pre,
 #examples pre {
-	margin: 20px auto;	
 }
 
 #steps pre:hover {
@@ -84,6 +83,12 @@ body > div.container {
 #examples .label {
 	text-transform: uppercase;
 	text-align: center;
+}
+
+.bs-links {
+	background-color: rgba(255,255,255,0.5);
+	padding: 5px;
+	padding-bottom: 10px;
 }
 
 .code-language {
@@ -103,6 +108,11 @@ body > div.container {
 
 .jumbotron p {
 	margin-bottom: 50px;	
+}
+
+.like-btn {
+	position: relative;
+	top: 5px;	
 }
 
 .masthead small {
@@ -125,4 +135,8 @@ body > div.container {
 
 .section-inner {
 	margin: 20px;
+}
+
+.tweet-btn iframe {
+	width: 80px !important;
 }

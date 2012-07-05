@@ -2,5 +2,5 @@
 	<p class="pull-right">
 		<a href="#top">top</a>
 	</p>
-	<p>&copy; <a href="http://stanleyhlng.com">stanleyhlng.com</a> 2012</p>
+	<p>&copy; <a href="http://stanleyhlng.com">stanleyhlng.com</a> <?php echo date('Y'); ?></p>
 </footer>

@@ -100,6 +100,10 @@
 	sort( $languages );
 ?>
 <?php
+	$pageHost = getValue( $_SERVER, 'HTTP_HOST' );
+	$pageUrl = getValue( $_SERVER, 'SCRIPT_NAME' );
+	$pageUrl = "http://" . $pageHost . $pageUrl;
+	
 	$pageName = getValue( $_SERVER, 'SCRIPT_NAME' );
 	$pageName = basename( $pageName, ".php" );
 	
@@ -154,6 +158,8 @@
 	</head>
 	
 	<body name="top">
+
+		<div id="fb-root"></div>
 	
 		<?php include 'includes/site_navbar.php'; ?>
 	
@@ -177,6 +183,24 @@
 				<p class="lead">Beautify the code snippets in a web page.  <!--Here's the themes for <a target="_blank" href="http://code.google.com/p/google-code-prettify/">Prettify.JS</a>.
 					//-->
 				</p>
+				<p>
+					<a onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download <?php echo $themes[$id]['name']; ?>']);" class="btn btn-primary btn-large" href="<?php echo $file; ?>">Download</a>
+				</p>
+				<div class="bs-links">
+					<ul class="quick-links">
+						<li class="follow-btn">
+<a href="https://twitter.com/stanleyhlng" class="twitter-follow-button" data-show-count="false">Follow @stanleyhlng</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</li>
+						<li class="tweet-btn">
+<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</li>
+						<li class="like-btn">
+<iframe src="//www.facebook.com/plugins/like.php?href=<?php echo $pageUrl; ?>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=160922734042810" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:20px;" allowTransparency="true"></iframe>
+						</li>
+					</ul>
+				</div>
 			</header>
 			
 			<!-- section: steps -->
@@ -440,6 +464,38 @@ echo htmlentities( $markup );
 				</div>
 				<!-- /step 5 -->
 				
+				<!-- step 6 -->
+				<div class="row">
+					<div class="span12">
+						<h2><small>6/</small> Wait.  Make It More Prettier</h2>				
+					</div>			
+					<div class="span12">
+						<p>
+							<div><blockquote>You can add your own stylesheet file, e.g. <code>prettify-[YOUR THEME].css</code> to make the code more prettier.</blockquote></div>
+<pre class="prettyprint linenums">
+
+<?php
+$markup = <<<MARKUP
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="path/to/prettify.css" />
+<link rel="stylesheet" type="text/css" href="path/to/prettify-[YOUR THEME].css" />
+</head>
+</html>
+
+MARKUP;
+
+echo htmlentities( $markup );
+
+?>
+
+</pre>
+						</p>
+					</div>
+				</div>
+				<!-- /step 6 -->
+				
 			</section>
 			
 			<!-- section: Examples -->
@@ -574,6 +630,20 @@ echo $data;
 		<script type="text/javascript" src="assets/libraries/prettify/js/prettify.js"></script>		
 		<script type="text/javascript" src="assets/libraries/prettify/js/lang-css.js"></script>				
 		<script type="text/javascript" src="assets/javascripts/prettify-js.js"></script>
+		<script type="text/javascript">
+		
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-33173093-1']);
+		  _gaq.push(['_setDomainName', 'stanleyhlng.com']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>		
 	</body>
 
 </html>
