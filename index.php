@@ -128,6 +128,11 @@
 		'name' => 'Sons of Obsidian',
 		'link' => '/prettify-js/?id=sons-of-obsidian'
 	);
+	$themes['default'] = array(
+		'name' => 'Default',
+		'link' => '/prettify-js/?id=default'
+	);
+	asort( $themes );
 ?>
 <!DOCTYPE html>
 <html lang="en">
