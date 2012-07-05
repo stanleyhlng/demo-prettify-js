@@ -1,28 +1,3 @@
-<?php
-	include_once 'helpers.php';
-	$pageName = getValue( $_SERVER, 'SCRIPT_NAME' );
-	$pageName = basename( $pageName, ".php" );
-	
-	$id = getValue( $_REQUEST, "id" );
-	
-	$themes = array();
-	$themes['bootstrap'] = array(
-		'name' => 'Bootstrap',
-		'link' => '/prettify-js/?id=bootstrap'
-		);
-	$themes['tomorrow-night-blue'] = array(
-		'name' => 'Tomorrow Night Blue',
-		'link' => '/prettify-js/?id=tomorrow-night-blue'
-		);
-	$themes['solarized-dark'] = array(
-		'name' => 'Solarized Dark',
-		'link' => '/prettify-js/?id=solarized-dark'
-	);
-	$themes['sons-of-obsidian'] = array(
-		'name' => 'Sons of Obsidian',
-		'link' => '/prettify-js/?id=sons-of-obsidian'
-	);
-?>
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">

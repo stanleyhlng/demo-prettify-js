@@ -60,6 +60,31 @@ body > div.container {
 	margin-bottom: 550px;	
 }
 
+#steps h2 {
+	margin-top:  20px;
+	margin-bottom: 10px;	
+}
+
+#steps div,
+#examples div {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+#steps pre,
+#examples pre {
+	margin: 20px auto;	
+}
+
+#steps pre:hover {
+	opacity: 0.8;
+}
+
+#steps .label,
+#examples .label {
+	text-transform: uppercase;
+	text-align: center;
+}
 
 .code-language {
 	padding-top: 100px;

@@ -45,6 +45,7 @@
 pre.prettyprint
 {
     border: 0px solid #888;
+    background-color: #111111;
 }
 ol.linenums
 {
