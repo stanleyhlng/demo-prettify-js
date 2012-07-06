@@ -11,95 +11,95 @@
 
 @mixin comment {
 	.com { 
-		color: #586175; 
+		color: #7285b7; 
 		font-style: italic; 
 	}
 }
 
 @mixin close-bracket {
 	.clo { 
-		color: #839496; 
+		color: #ffffff; 
 	}	
 }
 
 @mixin declaration {
 	.dec { 
-		color: #268bd2; 
+		color: #ffc58f; 
 	}
 }
 
 @mixin function-name {
 	.fun { 
-		color: #FF0000; 
+		color: #bbdaff; 
 	}
 }
 
 @mixin keyword {
 	.kwd { 
-		color: #859900; 
+		color: #ebbbff; 
 		//font-weight: bold;
 	}
 }
 
 @mixin literal-value {
 	.lit { 
-		color: #2aa198; 
+		color: #ffc58f; 
 	}
 }
 
 @mixin markup-attribute-name {
 	.atn { 
-		color: #586175; 
+		color: #ffc58f; 
 	}
 }
 
 @mixin markup-attribute-value {
 	.atv { 
-		color: #2aa198; 
+		color: #99ffff; 
 	}
 }
 
 @mixin markup-tag-name {
 	.tag { 
-		color: #268bd2; 
+		color: #ff9da4; 
 		//font-weight: bold; 
 	}
 }
 
 @mixin open-bracket {
 	.opn { 
-		color: #839496; 
+		color: #ffffff; 
 	}	
 }
 
 @mixin plain-text {
 	.pln { 
-		color: #bd3613; 
+		color: #ffffff; 
 	}
 }
 
 @mixin punctuation {
 	.pun { 
-		color: #839496; 
+		color: #ffffff; 
 	}	
 }
 
 @mixin string-content {
 	.str {
-		color: #269186;
+		color: #d1f1a9;
 	}
 }
 
 @mixin type-name {
 	.typ { 
-		color: #b58900; 
+		color: #bbdaff; 
 		//font-weight: bold; 
 	}
 }
 
 @mixin variable-name {
 	.var { 
-		color: #268bd2; 
+		color: #ff9da4; 
 	}
 }
 
@@ -124,7 +124,7 @@
 
 	/* Put a border around prettyprinted code snippets. */
 	pre.prettyprint { 
-        background-color: #042029;
+        background-color: #002451;
 		padding: 10px; 
 		border: 1px solid #E1E1E8;
 	}
@@ -141,7 +141,7 @@
 
 	/* Specify class=linenums on a pre to get line numbering */
 	ol.linenums {
-        color: #4c666c;
+        color: #7285b7;
         margin: 0 0 0 40px;
 	}
 	

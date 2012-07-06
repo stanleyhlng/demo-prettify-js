@@ -11,95 +11,95 @@
 
 @mixin comment {
 	.com { 
-		color: #586175; 
+		color: #555555; 
 		font-style: italic; 
 	}
 }
 
 @mixin close-bracket {
 	.clo { 
-		color: #839496; 
+		color: #F1F2F3; 
 	}	
 }
 
 @mixin declaration {
 	.dec { 
-		color: #268bd2; 
+		color: purple; 
 	}
 }
 
 @mixin function-name {
 	.fun { 
-		color: #FF0000; 
+		color: #bbdaff; 
 	}
 }
 
 @mixin keyword {
 	.kwd { 
-		color: #859900; 
+		color: #93C763; 
 		//font-weight: bold;
 	}
 }
 
 @mixin literal-value {
 	.lit { 
-		color: #2aa198; 
+		color: #FACD22; 
 	}
 }
 
 @mixin markup-attribute-name {
 	.atn { 
-		color: #586175; 
+		color: #E0E2E4; 
 	}
 }
 
 @mixin markup-attribute-value {
 	.atv { 
-		color: #2aa198; 
+		color: #EC7600; 
 	}
 }
 
 @mixin markup-tag-name {
 	.tag { 
-		color: #268bd2; 
+		color: #8AC763; 
 		//font-weight: bold; 
 	}
 }
 
 @mixin open-bracket {
 	.opn { 
-		color: #839496; 
+		color: #F1F2F3; 
 	}	
 }
 
 @mixin plain-text {
 	.pln { 
-		color: #bd3613; 
+		color: #F1F2F3; 
 	}
 }
 
 @mixin punctuation {
 	.pun { 
-		color: #839496; 
+		color: #F1F2F3; 
 	}	
 }
 
 @mixin string-content {
 	.str {
-		color: #269186;
+		color: #EC7600;
 	}
 }
 
 @mixin type-name {
 	.typ { 
-		color: #b58900; 
+		color: #678CB1; 
 		//font-weight: bold; 
 	}
 }
 
 @mixin variable-name {
 	.var { 
-		color: #268bd2; 
+		color: #ff9da4; 
 	}
 }
 
@@ -124,7 +124,7 @@
 
 	/* Put a border around prettyprinted code snippets. */
 	pre.prettyprint { 
-        background-color: #042029;
+        background-color: #111111;
 		padding: 10px; 
 		border: 1px solid #E1E1E8;
 	}
@@ -141,13 +141,34 @@
 
 	/* Specify class=linenums on a pre to get line numbering */
 	ol.linenums {
-        color: #4c666c;
+        color: #7285b7;
         margin: 0 0 0 40px;
 	}
 	
 	ol.linenums li { 
         line-height: 18px;
         padding-left: 12px;        
-	}	
+	}
+
+	ol.linenums li.L0, 
+	ol.linenums li.L1, 
+	ol.linenums li.L2, 
+	ol.linenums li.L3, 
+	ol.linenums li.L4, 
+	ol.linenums li.L5, 
+	ol.linenums li.L6, 
+	ol.linenums li.L7, 
+	ol.linenums li.L8, 
+	ol.linenums li.L9 {
+    	color: #555555;
+	}
+	
+	ol.linenums li.L1, 
+	ol.linenums li.L3, 
+	ol.linenums li.L5, 
+	ol.linenums li.L7, 
+	ol.linenums li.L9 {
+	    background: #111111;
+	}
 }
 @include line-numbers;
