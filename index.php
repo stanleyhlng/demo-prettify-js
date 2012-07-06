@@ -55,6 +55,40 @@
 				<p>
 					<a onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download <?php echo $themes[$id]['name']; ?>']);" class="btn btn-primary btn-large" href="<?php echo $file; ?>">Download<small>(<?php echo $id . DIRECTORY_SEPARATOR . basename(($file)); ?>)</small></a>
 				</p>
+				<div class="banner well">
+<pre class="prettyprint linenums">
+<?php
+$markup = <<<MARKUP
+namespace( 'media' );
+
+media.Podcast = ( function() {
+    var podcastConstructor = function Podcast( name ) {
+        if ( false === ( this instanceof Podcast ) ) {
+            return new Podcast();
+        }
+        
+        this.getName = function() {
+            return name;
+        }
+    }
+    
+    podcastConstructor.prototype.download = function ( episode ) {
+        console.log( 'Downloading ' + episode + ' of ' + this.getName() );
+    }
+    
+    return podcastConstructor;
+}());
+
+var astronomyCast = new media.Podcast( 'Astronomy podcast' );
+astronomyCast.download( 'the first episode' );
+MARKUP;
+
+echo htmlentities( $markup );
+
+?>
+
+</pre>					
+				</div>
 				<div class="bs-links">
 					<ul class="quick-links">
 						<li class="follow-btn">

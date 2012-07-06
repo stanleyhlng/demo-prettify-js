@@ -128,9 +128,9 @@
 		'name' => 'Sons of Obsidian',
 		'link' => '/prettify-js/?id=sons-of-obsidian'
 	);
-	$themes['default'] = array(
-		'name' => 'Default',
-		'link' => '/prettify-js/?id=default'
+	$themes['google-code'] = array(
+		'name' => 'Google Code',
+		'link' => '/prettify-js/?id=google-code'
 	);
 	asort( $themes );
 ?>
