@@ -151,17 +151,12 @@
 		<!--[if lt IE 9]>
 		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<!--
-		<link rel="stylesheet" href="assets/libraries/prettify/css/prettify.css" />	
-		//-->
 		<link rel="stylesheet" href="<?php echo $file; ?>" />
 		<link rel="stylesheet" href="assets/stylesheets/bootstrap-docs.css" />
 		<link rel="stylesheet" href="assets/stylesheets/prettify-js.css" />
 		<link rel="stylesheet" href="assets/libraries/bootstrap/css/bootstrap-responsive.css" />		
     	
-    	<!--	
-		<link rel="shortcut icon" href="../vendor/stanleyhlng/icons/favicon.ico" />
-		//-->
+		<link rel="shortcut icon" href="assets/icons/favicon.ico" />
 	</head>
 	
 	<body name="top">

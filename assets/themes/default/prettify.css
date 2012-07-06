@@ -1,4 +1,6 @@
-/* Pretty printing styles. Used with prettify.js. */
+/* Pretty printing styles. Used with prettify.js.
+ * http://code.google.com/p/google-code-prettify/source/browse/trunk/src/prettify.css
+ */
 
 /* SPAN elements with the classes below are added by prettyprint. */
 .pln { color: #000 }  /* plain text */
@@ -32,7 +34,7 @@
 }
 
 /* Put a border around prettyprinted code snippets. */
-pre.prettyprint { padding: 2px; border: 1px solid #888 }
+pre.prettyprint { padding: 8.5px; border: 1px solid #EEE }
 
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
