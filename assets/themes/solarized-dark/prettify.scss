@@ -147,8 +147,7 @@
 	
 	ol.linenums li { 
         line-height: 18px;
-        padding-left: 12px;
-        //text-shadow: 0 1px 0 #FFFFFF;
+        padding-left: 12px;        
 	}	
 }
 @include line-numbers;

@@ -222,7 +222,7 @@ $code = <<<CODE
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Demo | Prettify.JS | stanleyhlng.com</title>
+    <title>Demo | Prettify.JS</title>
   </head>
   <body>
     <h1>Hello, World!</h1>
@@ -321,7 +321,7 @@ $markup = <<<MARKUP
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Demo | Prettify.JS | stanleyhlng.com</title>
+    <title>Demo | Prettify.JS</title>
   </head>
   <body>
     <h1>Hello, World!</h1>
@@ -348,7 +348,7 @@ $markup = <<<MARKUP
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Demo | Prettify.JS | stanleyhlng.com</title>
+    <title>Demo | Prettify.JS</title>
   </head>
   <body>
     <h1>Hello, World!</h1>
