@@ -11,95 +11,95 @@
 
 @mixin comment {
 	.com { 
-		color: #800; 
+		color: #586175; 
 		font-style: italic; 
 	}
 }
 
 @mixin close-bracket {
 	.clo { 
-		color: #660; 
+		color: #839496; 
 	}	
 }
 
 @mixin declaration {
 	.dec { 
-		color: #606; 
+		color: #268bd2; 
 	}
 }
 
 @mixin function-name {
 	.fun { 
-		color: red; 
+		color: #FF0000; 
 	}
 }
 
 @mixin keyword {
 	.kwd { 
-		color: #008; 
-		font-weight: bold;
+		color: #859900; 
+		//font-weight: bold;
 	}
 }
 
 @mixin literal-value {
 	.lit { 
-		color: #066; 
+		color: #2aa198; 
 	}
 }
 
 @mixin markup-attribute-name {
 	.atn { 
-		color: #606; 
+		color: #586175; 
 	}
 }
 
 @mixin markup-attribute-value {
 	.atv { 
-		color: #080; 
+		color: #2aa198; 
 	}
 }
 
 @mixin markup-tag-name {
 	.tag { 
-		color: #008; 
-		font-weight: bold; 
+		color: #268bd2; 
+		//font-weight: bold; 
 	}
 }
 
 @mixin open-bracket {
 	.opn { 
-		color: #660; 
+		color: #839496; 
 	}	
 }
 
 @mixin plain-text {
 	.pln { 
-		color: #000; 
+		color: #bd3613; 
 	}
 }
 
 @mixin punctuation {
 	.pun { 
-		color: #660; 
+		color: #839496; 
 	}	
 }
 
 @mixin string-content {
 	.str {
-		color: #080;
+		color: #269186;
 	}
 }
 
 @mixin type-name {
 	.typ { 
-		color: #606; 
-		font-weight: bold; 
+		color: #b58900; 
+		//font-weight: bold; 
 	}
 }
 
 @mixin variable-name {
 	.var { 
-		color: #606; 
+		color: #268bd2; 
 	}
 }
 
@@ -124,9 +124,14 @@
 
 	/* Put a border around prettyprinted code snippets. */
 	pre.prettyprint { 
+        background-color: #042029;
 		padding: 10px; 
-		border: 1px solid #eee; 
+		border: 1px solid #E1E1E8;
 	}
+
+    pre.prettyprint.linenums {
+        //box-shadow: 40px 0 0 #FBFBFC inset, 41px 0 0 #ECECF0 inset;
+    }
 
 }
 @include container;
@@ -136,34 +141,14 @@
 
 	/* Specify class=linenums on a pre to get line numbering */
 	ol.linenums {
-		margin: { 
-			top: 0; 
-			bottom: 0; 
-		}
+        color: #4c666c;
+        margin: 0 0 0 33px;
 	}
 	
 	ol.linenums li { 
-		color: #888; 
-	}
-	
-	li.L0,
-	li.L1,
-	li.L2,
-	li.L3,
-	li.L5,
-	li.L6,
-	li.L7,
-	li.L8 { 
-		list-style-type: normal; 
-	}
-	
-	/* Alternate shading for lines */
-	li.L1,
-	li.L3,
-	li.L5,
-	li.L7,
-	li.L9 { 
-		background: #eee; 
-	}
+        line-height: 18px;
+        padding-left: 12px;
+        //text-shadow: 0 1px 0 #FFFFFF;
+	}	
 }
 @include line-numbers;

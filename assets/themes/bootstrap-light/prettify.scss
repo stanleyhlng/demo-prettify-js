@@ -11,95 +11,95 @@
 
 @mixin comment {
 	.com { 
-		color: #800; 
-		font-style: italic; 
+		color: #93A1A1; 
+		//font-style: italic; 
 	}
 }
 
 @mixin close-bracket {
 	.clo { 
-		color: #660; 
+		color: #93A1A1; 
 	}	
 }
 
 @mixin declaration {
 	.dec { 
-		color: #606; 
+		color: teal; 
 	}
 }
 
 @mixin function-name {
 	.fun { 
-		color: red; 
+		color: #DC322F; 
 	}
 }
 
 @mixin keyword {
 	.kwd { 
-		color: #008; 
-		font-weight: bold;
+		color: #1E347B; 
+		//font-weight: bold;
 	}
 }
 
 @mixin literal-value {
 	.lit { 
-		color: #066; 
+		color: #195F91; 
 	}
 }
 
 @mixin markup-attribute-name {
 	.atn { 
-		color: #606; 
+		color: teal; 
 	}
 }
 
 @mixin markup-attribute-value {
 	.atv { 
-		color: #080; 
+		color: #DD1144; 
 	}
 }
 
 @mixin markup-tag-name {
 	.tag { 
 		color: #008; 
-		font-weight: bold; 
+		//font-weight: bold; 
 	}
 }
 
 @mixin open-bracket {
 	.opn { 
-		color: #660; 
+		color: #93A1A1; 
 	}	
 }
 
 @mixin plain-text {
 	.pln { 
-		color: #000; 
+		color: #48484C; 
 	}
 }
 
 @mixin punctuation {
 	.pun { 
-		color: #660; 
+		color: #93A1A1; 
 	}	
 }
 
 @mixin string-content {
 	.str {
-		color: #080;
+		color: #DD1144;
 	}
 }
 
 @mixin type-name {
 	.typ { 
-		color: #606; 
-		font-weight: bold; 
+		color: teal; 
+		//font-weight: bold; 
 	}
 }
 
 @mixin variable-name {
 	.var { 
-		color: #606; 
+		color: teal; 
 	}
 }
 
@@ -124,9 +124,14 @@
 
 	/* Put a border around prettyprinted code snippets. */
 	pre.prettyprint { 
+        background-color: #F7F7F9;
 		padding: 10px; 
-		border: 1px solid #eee; 
+		border: 1px solid #E1E1E8; 
 	}
+
+    pre.prettyprint.linenums {
+        box-shadow: 40px 0 0 #FBFBFC inset, 41px 0 0 #ECECF0 inset;
+    }
 
 }
 @include container;
@@ -136,14 +141,15 @@
 
 	/* Specify class=linenums on a pre to get line numbering */
 	ol.linenums {
-		margin: { 
-			top: 0; 
-			bottom: 0; 
-		}
+        color: #1E347B;
+        margin: 0 0 0 33px;
 	}
 	
 	ol.linenums li { 
-		color: #888; 
+        color: #BEBEC5;
+        line-height: 18px;
+        padding-left: 12px;
+        text-shadow: 0 1px 0 #FFFFFF;
 	}
 	
 	li.L0,
