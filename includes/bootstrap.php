@@ -10,7 +10,7 @@
 		// TODO: redirect to error page
 		//die( 'missing input params: id' );
 		//exit;
-		header( 'Location: /prettify-js/?id=bootstrap' );
+		header( 'Location: /prettify-js/?id=bootstrap-light' );
 		exit;
 	}
 	else 
@@ -112,9 +112,9 @@
 	$id = getValue( $_REQUEST, "id" );
 	
 	$themes = array();
-	$themes['bootstrap'] = array(
-		'name' => 'Bootstrap',
-		'link' => '/prettify-js/?id=bootstrap'
+	$themes['bootstrap-light'] = array(
+		'name' => 'Bootstrap Light',
+		'link' => '/prettify-js/?id=bootstrap-light'
 		);
 	$themes['tomorrow-night-blue'] = array(
 		'name' => 'Tomorrow Night Blue',
@@ -128,9 +128,9 @@
 		'name' => 'Sons of Obsidian',
 		'link' => '/prettify-js/?id=sons-of-obsidian'
 	);
-	$themes['google-code'] = array(
-		'name' => 'Google Code',
-		'link' => '/prettify-js/?id=google-code'
+	$themes['google-code-light'] = array(
+		'name' => 'Google Code Light',
+		'link' => '/prettify-js/?id=google-code-light'
 	);
 	asort( $themes );
 ?>

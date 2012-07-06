@@ -1,0 +1,169 @@
+/* Pretty printing styles. Used with prettify.js.
+ *
+ * This version is slight modified based on the original version.
+ *
+ * Name:	Stanley Ng
+ * Email: 	stanleyhlng@googlegroups.com
+ * 
+ * Reference:
+ * http://code.google.com/p/google-code-prettify/source/browse/trunk/src/prettify.css
+ */
+
+@mixin comment {
+	.com { 
+		color: #800; 
+		font-style: italic; 
+	}
+}
+
+@mixin close-bracket {
+	.clo { 
+		color: #660; 
+	}	
+}
+
+@mixin declaration {
+	.dec { 
+		color: #606; 
+	}
+}
+
+@mixin function-name {
+	.fun { 
+		color: red; 
+	}
+}
+
+@mixin keyword {
+	.kwd { 
+		color: #008; 
+		font-weight: bold;
+	}
+}
+
+@mixin literal-value {
+	.lit { 
+		color: #066; 
+	}
+}
+
+@mixin markup-attribute-name {
+	.atn { 
+		color: #606; 
+	}
+}
+
+@mixin markup-attribute-value {
+	.atv { 
+		color: #080; 
+	}
+}
+
+@mixin markup-tag-name {
+	.tag { 
+		color: #008; 
+		font-weight: bold; 
+	}
+}
+
+@mixin open-bracket {
+	.opn { 
+		color: #660; 
+	}	
+}
+
+@mixin plain-text {
+	.pln { 
+		color: #000; 
+	}
+}
+
+@mixin punctuation {
+	.pun { 
+		color: #660; 
+	}	
+}
+
+@mixin string-content {
+	.str {
+		color: #080;
+	}
+}
+
+@mixin type-name {
+	.typ { 
+		color: #606; 
+		font-weight: bold; 
+	}
+}
+
+@mixin variable-name {
+	.var { 
+		color: #606; 
+	}
+}
+
+@include plain-text;
+@include string-content;
+@include keyword;
+@include comment;
+@include type-name;
+@include literal-value;
+@include punctuation;
+@include open-bracket;
+@include close-bracket;
+@include markup-tag-name;
+@include markup-attribute-name;
+@include markup-attribute-value;
+@include declaration;
+@include variable-name;
+@include function-name;
+
+
+@mixin container {
+
+	/* Put a border around prettyprinted code snippets. */
+	pre.prettyprint { 
+		padding: 10px; 
+		border: 1px solid #eee; 
+	}
+
+}
+@include container;
+
+
+@mixin line-numbers {
+
+	/* Specify class=linenums on a pre to get line numbering */
+	ol.linenums {
+		margin: { 
+			top: 0; 
+			bottom: 0; 
+		}
+	}
+	
+	li { 
+		color: #888; 
+	}
+	
+	li.L0,
+	li.L1,
+	li.L2,
+	li.L3,
+	li.L5,
+	li.L6,
+	li.L7,
+	li.L8 { 
+		list-style-type: normal; 
+	}
+	
+	/* Alternate shading for lines */
+	li.L1,
+	li.L3,
+	li.L5,
+	li.L7,
+	li.L9 { 
+		background: #eee; 
+	}
+}
+@include line-numbers;
