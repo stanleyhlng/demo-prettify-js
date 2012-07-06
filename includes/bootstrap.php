@@ -124,9 +124,9 @@
 		'name' => 'Solarized Dark',
 		'link' => '/prettify-js/?id=solarized-dark'
 	);
-	$themes['sons-of-obsidian'] = array(
-		'name' => 'Sons of Obsidian',
-		'link' => '/prettify-js/?id=sons-of-obsidian'
+	$themes['sons-of-obsidian-dark'] = array(
+		'name' => 'Sons of Obsidian Dark',
+		'link' => '/prettify-js/?id=sons-of-obsidian-dark'
 	);
 	$themes['google-code-light'] = array(
 		'name' => 'Google Code Light',
