@@ -115,10 +115,14 @@
 	$themes['bootstrap-light'] = array(
 		'name' => 'Bootstrap Light',
 		'link' => '/prettify-js/?id=bootstrap-light'
-		);
+	);
 	$themes['solarized-dark'] = array(
 		'name' => 'Solarized Dark',
 		'link' => '/prettify-js/?id=solarized-dark'
+	);
+	$themes['solarized-light'] = array(
+		'name' => 'Solarized Light',
+		'link' => '/prettify-js/?id=solarized-light'
 	);
 	$themes['sons-of-obsidian-dark'] = array(
 		'name' => 'Sons of Obsidian Dark',
@@ -131,6 +135,10 @@
 	$themes['tomorrow-night-blue'] = array(
 		'name' => 'Tomorrow Night Blue',
 		'link' => '/prettify-js/?id=tomorrow-night-blue'
+	);
+	$themes['tomorrow-night-dark'] = array(
+		'name' => 'Tomorrow Night Dark',
+		'link' => '/prettify-js/?id=tomorrow-night-dark'
 	);
 	$themes['tomorrow-night-light'] = array(
 		'name' => 'Tomorrow Night Light',

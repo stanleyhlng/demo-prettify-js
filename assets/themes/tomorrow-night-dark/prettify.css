@@ -3,62 +3,64 @@
  * Name:	Stanley Ng
  * Email: 	stanleyhlng@googlegroups.com
  * 
+ * Credits:
+ * https://github.com/chriskempson/tomorrow-theme
  */
 .pln {
-  color: #bd3613; }
+  color: #c5c8c6; }
 
 .str {
-  color: #269186; }
+  color: #b5bd68; }
 
 .kwd {
-  color: #859900; }
+  color: #b294bb; }
 
 .com {
-  color: #586175;
+  color: #969896;
   font-style: italic; }
 
 .typ {
-  color: #b58900; }
+  color: #de935f; }
 
 .lit {
-  color: #2aa198; }
+  color: #f0c674; }
 
 .pun {
-  color: #839496; }
+  color: #c5c8c6; }
 
 .opn {
-  color: #839496; }
+  color: #c5c8c6; }
 
 .clo {
-  color: #839496; }
+  color: #c5c8c6; }
 
 .tag {
-  color: #268bd2; }
+  color: #cc6666; }
 
 .atn {
-  color: #586175; }
+  color: #f0c674; }
 
 .atv {
-  color: #2aa198; }
+  color: #8abeb7; }
 
 .dec {
-  color: #268bd2; }
+  color: #c5c8c6; }
 
 .var {
-  color: #268bd2; }
+  color: #c82829; }
 
 .fun {
-  color: #FF0000; }
+  color: #cc6666; }
 
 /* Put a border around prettyprinted code snippets. */
 pre.prettyprint {
-  background-color: #fdf6e3;
+  background-color: #1d1f21;
   padding: 10px;
   border: 1px solid #E1E1E8; }
 
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
-  color: #4c666c;
+  color: #969896;
   margin: 0 0 0 40px; }
 
 ol.linenums li {

@@ -1,0 +1,149 @@
+/* Pretty printing styles. Used with prettify.js.
+ *
+ * Name:	Stanley Ng
+ * Email: 	stanleyhlng@googlegroups.com
+ * 
+ */
+
+@mixin comment {
+	.com { 
+		color: #586175; 
+		font-style: italic; 
+	}
+}
+
+@mixin close-bracket {
+	.clo { 
+		color: #839496; 
+	}	
+}
+
+@mixin declaration {
+	.dec { 
+		color: #268bd2; 
+	}
+}
+
+@mixin function-name {
+	.fun { 
+		color: #FF0000; 
+	}
+}
+
+@mixin keyword {
+	.kwd { 
+		color: #859900; 
+		//font-weight: bold;
+	}
+}
+
+@mixin literal-value {
+	.lit { 
+		color: #2aa198; 
+	}
+}
+
+@mixin markup-attribute-name {
+	.atn { 
+		color: #586175; 
+	}
+}
+
+@mixin markup-attribute-value {
+	.atv { 
+		color: #2aa198; 
+	}
+}
+
+@mixin markup-tag-name {
+	.tag { 
+		color: #268bd2; 
+		//font-weight: bold; 
+	}
+}
+
+@mixin open-bracket {
+	.opn { 
+		color: #839496; 
+	}	
+}
+
+@mixin plain-text {
+	.pln { 
+		color: #bd3613; 
+	}
+}
+
+@mixin punctuation {
+	.pun { 
+		color: #839496; 
+	}	
+}
+
+@mixin string-content {
+	.str {
+		color: #269186;
+	}
+}
+
+@mixin type-name {
+	.typ { 
+		color: #b58900; 
+		//font-weight: bold; 
+	}
+}
+
+@mixin variable-name {
+	.var { 
+		color: #268bd2; 
+	}
+}
+
+@include plain-text;
+@include string-content;
+@include keyword;
+@include comment;
+@include type-name;
+@include literal-value;
+@include punctuation;
+@include open-bracket;
+@include close-bracket;
+@include markup-tag-name;
+@include markup-attribute-name;
+@include markup-attribute-value;
+@include declaration;
+@include variable-name;
+@include function-name;
+
+
+@mixin container {
+
+	/* Put a border around prettyprinted code snippets. */
+	pre.prettyprint { 
+        background-color: #fdf6e3;
+		padding: 10px; 
+		border: 1px solid #E1E1E8;
+	}
+
+    pre.prettyprint.linenums {
+        //box-shadow: 40px 0 0 #FBFBFC inset, 41px 0 0 #ECECF0 inset;
+    }
+
+}
+@include container;
+
+
+@mixin line-numbers {
+
+	/* Specify class=linenums on a pre to get line numbering */
+	ol.linenums {
+        color: #4c666c;
+        margin: 0 0 0 40px;
+	}
+	
+	ol.linenums li { 
+        line-height: 18px;
+        padding-left: 12px;        
+	}	
+}
+@include line-numbers;

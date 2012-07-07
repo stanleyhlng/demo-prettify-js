@@ -1,0 +1,151 @@
+/* Pretty printing styles. Used with prettify.js.
+ *
+ * Name:	Stanley Ng
+ * Email: 	stanleyhlng@googlegroups.com
+ * 
+ * Credits:
+ * https://github.com/chriskempson/tomorrow-theme
+ */
+
+@mixin comment {
+	.com { 
+		color: #969896; 
+		font-style: italic; 
+	}
+}
+
+@mixin close-bracket {
+	.clo { 
+		color: #c5c8c6; 
+	}	
+}
+
+@mixin declaration {
+	.dec { 
+		color: #c5c8c6; 
+	}
+}
+
+@mixin function-name {
+	.fun { 
+		color: #cc6666; 
+	}
+}
+
+@mixin keyword {
+	.kwd { 
+		color: #b294bb; 
+		//font-weight: bold;
+	}
+}
+
+@mixin literal-value {
+	.lit { 
+		color: #f0c674; 
+	}
+}
+
+@mixin markup-attribute-name {
+	.atn { 
+		color: #f0c674; 
+	}
+}
+
+@mixin markup-attribute-value {
+	.atv { 
+		color: #8abeb7; 
+	}
+}
+
+@mixin markup-tag-name {
+	.tag { 
+		color: #cc6666; 
+		//font-weight: bold; 
+	}
+}
+
+@mixin open-bracket {
+	.opn { 
+		color: #c5c8c6; 
+	}	
+}
+
+@mixin plain-text {
+	.pln { 
+		color: #c5c8c6; 
+	}
+}
+
+@mixin punctuation {
+	.pun { 
+		color: #c5c8c6; 
+	}	
+}
+
+@mixin string-content {
+	.str {
+		color: #b5bd68;
+	}
+}
+
+@mixin type-name {
+	.typ { 
+		color: #de935f; 
+		//font-weight: bold; 
+	}
+}
+
+@mixin variable-name {
+	.var { 
+		color: #c82829; 
+	}
+}
+
+@include plain-text;
+@include string-content;
+@include keyword;
+@include comment;
+@include type-name;
+@include literal-value;
+@include punctuation;
+@include open-bracket;
+@include close-bracket;
+@include markup-tag-name;
+@include markup-attribute-name;
+@include markup-attribute-value;
+@include declaration;
+@include variable-name;
+@include function-name;
+
+
+@mixin container {
+
+	/* Put a border around prettyprinted code snippets. */
+	pre.prettyprint { 
+        background-color: #1d1f21;
+		padding: 10px; 
+		border: 1px solid #E1E1E8;
+	}
+
+    pre.prettyprint.linenums {
+        //box-shadow: 40px 0 0 #FBFBFC inset, 41px 0 0 #ECECF0 inset;
+    }
+
+}
+@include container;
+
+
+@mixin line-numbers {
+
+	/* Specify class=linenums on a pre to get line numbering */
+	ol.linenums {
+        color: #969896;
+        margin: 0 0 0 40px;
+	}
+	
+	ol.linenums li { 
+        line-height: 18px;
+        padding-left: 12px;        
+	}	
+}
+@include line-numbers;
