@@ -9,7 +9,7 @@
 
 @mixin comment {
 	.com { 
-		color: #7285b7; 
+		color: #999999; 
 		font-style: italic; 
 	}
 }
@@ -22,44 +22,44 @@
 
 @mixin declaration {
 	.dec { 
-		color: #ffc58f; 
+		color: #f99157; 
 	}
 }
 
 @mixin function-name {
 	.fun { 
-		color: #bbdaff; 
+		color: #6699cc; 
 	}
 }
 
 @mixin keyword {
 	.kwd { 
-		color: #ebbbff; 
+		color: #cc99cc; 
 		//font-weight: bold;
 	}
 }
 
 @mixin literal-value {
 	.lit { 
-		color: #ffc58f; 
+		color: #f99157; 
 	}
 }
 
 @mixin markup-attribute-name {
 	.atn { 
-		color: #ffc58f; 
+		color: #f99157; 
 	}
 }
 
 @mixin markup-attribute-value {
 	.atv { 
-		color: #99ffff; 
+		color: #66cccc; 
 	}
 }
 
 @mixin markup-tag-name {
 	.tag { 
-		color: #ff9da4; 
+		color: #f2777a; 
 		//font-weight: bold; 
 	}
 }
@@ -84,20 +84,20 @@
 
 @mixin string-content {
 	.str {
-		color: #d1f1a9;
+		color: #99cc99;
 	}
 }
 
 @mixin type-name {
 	.typ { 
-		color: #ffc58f; 
+		color: #f99157; 
 		//font-weight: bold; 
 	}
 }
 
 @mixin variable-name {
 	.var { 
-		color: #ff9da4; 
+		color: #f2777a; 
 	}
 }
 
@@ -122,7 +122,7 @@
 
 	/* Put a border around prettyprinted code snippets. */
 	pre.prettyprint { 
-        background-color: #002451;
+        background-color: #2d2d2d;
 		padding: 10px; 
 		border: 1px solid #E1E1E8;
 	}
@@ -139,7 +139,7 @@
 
 	/* Specify class=linenums on a pre to get line numbering */
 	ol.linenums {
-        color: #7285b7;
+        color: #999999;
         margin: 0 0 0 40px;
 	}
 	
