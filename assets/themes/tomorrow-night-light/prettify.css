@@ -7,60 +7,60 @@
  * https://github.com/chriskempson/tomorrow-theme
  */
 .pln {
-  color: #cccccc; }
+  color: #4d4d4c; }
 
 .str {
-  color: #99cc99; }
+  color: #718c00; }
 
 .kwd {
-  color: #cc99cc; }
+  color: #8959a8; }
 
 .com {
-  color: #999999;
+  color: #8e908c;
   font-style: italic; }
 
 .typ {
-  color: #f99157; }
+  color: #f5871f; }
 
 .lit {
-  color: #f99157; }
+  color: #eab700; }
 
 .pun {
-  color: #cccccc; }
+  color: #4d4d4c; }
 
 .opn {
-  color: #cccccc; }
+  color: #4d4d4c; }
 
 .clo {
-  color: #cccccc; }
+  color: #4d4d4c; }
 
 .tag {
-  color: #f2777a; }
+  color: #c82829; }
 
 .atn {
-  color: #f99157; }
+  color: #eab700; }
 
 .atv {
-  color: #66cccc; }
+  color: #3e999f; }
 
 .dec {
-  color: #f99157; }
+  color: #f5871f; }
 
 .var {
-  color: #f2777a; }
+  color: #c82829; }
 
 .fun {
-  color: #6699cc; }
+  color: #c82829; }
 
 /* Put a border around prettyprinted code snippets. */
 pre.prettyprint {
-  background-color: #2d2d2d;
+  background-color: #ffffff;
   padding: 10px;
   border: 1px solid #E1E1E8; }
 
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
-  color: #999999;
+  color: #8e908c;
   margin: 0 0 0 40px; }
 
 ol.linenums li {

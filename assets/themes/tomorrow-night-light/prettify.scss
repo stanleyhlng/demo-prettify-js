@@ -9,95 +9,95 @@
 
 @mixin comment {
 	.com { 
-		color: #999999; 
+		color: #8e908c; 
 		font-style: italic; 
 	}
 }
 
 @mixin close-bracket {
 	.clo { 
-		color: #cccccc; 
+		color: #4d4d4c; 
 	}	
 }
 
 @mixin declaration {
 	.dec { 
-		color: #f99157; 
+		color: #f5871f; 
 	}
 }
 
 @mixin function-name {
 	.fun { 
-		color: #6699cc; 
+		color: #c82829; 
 	}
 }
 
 @mixin keyword {
 	.kwd { 
-		color: #cc99cc; 
+		color: #8959a8; 
 		//font-weight: bold;
 	}
 }
 
 @mixin literal-value {
 	.lit { 
-		color: #f99157; 
+		color: #eab700; 
 	}
 }
 
 @mixin markup-attribute-name {
 	.atn { 
-		color: #f99157; 
+		color: #eab700; 
 	}
 }
 
 @mixin markup-attribute-value {
 	.atv { 
-		color: #66cccc; 
+		color: #3e999f; 
 	}
 }
 
 @mixin markup-tag-name {
 	.tag { 
-		color: #f2777a; 
+		color: #c82829; 
 		//font-weight: bold; 
 	}
 }
 
 @mixin open-bracket {
 	.opn { 
-		color: #cccccc; 
+		color: #4d4d4c; 
 	}	
 }
 
 @mixin plain-text {
 	.pln { 
-		color: #cccccc; 
+		color: #4d4d4c; 
 	}
 }
 
 @mixin punctuation {
 	.pun { 
-		color: #cccccc; 
+		color: #4d4d4c; 
 	}	
 }
 
 @mixin string-content {
 	.str {
-		color: #99cc99;
+		color: #718c00;
 	}
 }
 
 @mixin type-name {
 	.typ { 
-		color: #f99157; 
+		color: #f5871f; 
 		//font-weight: bold; 
 	}
 }
 
 @mixin variable-name {
 	.var { 
-		color: #f2777a; 
+		color: #c82829; 
 	}
 }
 
@@ -122,7 +122,7 @@
 
 	/* Put a border around prettyprinted code snippets. */
 	pre.prettyprint { 
-        background-color: #2d2d2d;
+        background-color: #ffffff;
 		padding: 10px; 
 		border: 1px solid #E1E1E8;
 	}
@@ -139,7 +139,7 @@
 
 	/* Specify class=linenums on a pre to get line numbering */
 	ol.linenums {
-        color: #999999;
+        color: #8e908c;
         margin: 0 0 0 40px;
 	}
 	

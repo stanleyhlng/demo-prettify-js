@@ -116,10 +116,6 @@
 		'name' => 'Bootstrap Light',
 		'link' => '/prettify-js/?id=bootstrap-light'
 		);
-	$themes['tomorrow-night-blue'] = array(
-		'name' => 'Tomorrow Night Blue',
-		'link' => '/prettify-js/?id=tomorrow-night-blue'
-		);
 	$themes['solarized-dark'] = array(
 		'name' => 'Solarized Dark',
 		'link' => '/prettify-js/?id=solarized-dark'
@@ -131,6 +127,18 @@
 	$themes['google-code-light'] = array(
 		'name' => 'Google Code Light',
 		'link' => '/prettify-js/?id=google-code-light'
+	);
+	$themes['tomorrow-night-blue'] = array(
+		'name' => 'Tomorrow Night Blue',
+		'link' => '/prettify-js/?id=tomorrow-night-blue'
+	);
+	$themes['tomorrow-night-light'] = array(
+		'name' => 'Tomorrow Night Light',
+		'link' => '/prettify-js/?id=tomorrow-night-light'
+	);
+	$themes['tomorrow-night-eighties'] = array(
+		'name' => 'Tomorrow Night Eighties',
+		'link' => '/prettify-js/?id=tomorrow-night-eighties'
 	);
 	asort( $themes );
 ?>
